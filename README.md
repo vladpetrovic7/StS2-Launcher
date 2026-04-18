@@ -18,14 +18,13 @@ You need:
 
 - An Android phone (tested on Samsung — other vendors probably work but unconfirmed).
 - A Steam account that owns **Slay the Spire 2**. The APK does not contain any game files; it downloads them from your Steam account on first run.
-- Enough free storage for the game (~1 GB).
 
 Steps:
 
 1. **If you already have Ekyso's launcher installed: uninstall it first.** Android won't install this one over it because it's signed with a different key. Uninstalling wipes the local data; in-game progress is saved to Steam Cloud, but any unsaved run state is lost.
 2. Download the APK from the Releases page to your phone (or to your PC and sideload).
 3. Open it. Android will warn about "install from unknown sources" — allow it for whichever app you're installing from (browser, file manager, etc.).
-4. Open the app, log in with Steam, wait for the game to download, and play.
+4. Open the app, log in with Steam, wait for the game to re-download, and play.
 
 ## What's different from Ekyso's version
 
@@ -39,14 +38,11 @@ Full diff: [PR #49](https://github.com/Ekyso/StS2-Launcher/pull/49).
 ## Heads-up
 
 - This APK is signed with a **locally-generated debug keystore**, not a real release key. It's fine for sideloading but Google Play would reject it, and you can't install it over the official build (or vice versa) without uninstalling first.
-- If I re-sign with a different keystore in the future, you'll need to uninstall and reinstall again. I'll try to keep using the same key for updates.
 - I'm not planning to keep this fork maintained long-term. Once the upstream PR is merged, use Ekyso's build.
 
 ## Credits
 
 All real work on this launcher is by **[Ekyso](https://github.com/Ekyso)** and contributors. See the [upstream repo](https://github.com/Ekyso/StS2-Launcher) and the original developer README preserved here as [UPSTREAM-README.md](UPSTREAM-README.md).
-
-Slay the Spire 2 is © Mega Crit Games. This project has no affiliation with Mega Crit.
 
 ## License
 
